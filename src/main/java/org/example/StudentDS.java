@@ -35,7 +35,7 @@ public class StudentDS {
     }
 }
 
-class sortByGpa implements Comparator<StudentDS>{
+class sortbyGpa implements Comparator<StudentDS>{
     public int compare(StudentDS a, StudentDS b){
         return (int) (b.getGpa() - a.getGpa());
     }
@@ -52,7 +52,7 @@ class StudentTest{
         for (StudentDS s : studentList){
             System.out.println(s.getName() + ", " + s.getAge() + ", " + s.getGpa());
         }
-        Collections.sort(studentList, new sortByGpa());
+        Collections.sort(studentList, new sortbyGpa());
         System.out.println("After Sorting");
         for (StudentDS s : studentList){
             System.out.println(s.getName() + ", " + s.getAge() + ", " + s.getGpa());
