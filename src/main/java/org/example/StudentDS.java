@@ -43,7 +43,6 @@ class SortByGpa implements Comparator<StudentDS>{
 }
 class StudentTest{
     public static void main(String[] args) {
-        String m;
         Logger logger = Logger.getLogger("com.api.jar");
         List<StudentDS> studentList = new ArrayList<>();
         StudentDS s1 = new StudentDS("abc", 1,34);
